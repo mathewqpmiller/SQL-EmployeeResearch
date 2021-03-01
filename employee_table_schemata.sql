@@ -1,10 +1,10 @@
 -- EMPLOYEE TABLE SCHEMATA for the SQL Homework - Employee Database: A Mystery in Two Parts
 
 -- Use these to drop any tables if they exist; for debug, error correction or table creation.
+DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS departments;
 DROP TABLE IF EXISTS dept_emp;
 DROP TABLE IF EXISTS dept_manager;
-DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS titles;
 
@@ -56,3 +56,14 @@ CREATE TABLE dept_manager (
 
 -- Import successfully completed.  24 rows of data added. No need to limit view of rows. 
 SELECT * FROM dept_manager;
+
+-- Create 'salaries' table and execute
+CREATE TABLE salaries (
+	emp_no INT NOT NULL,
+	salary INT NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
+	PRIMARY KEY (emp_no)
+);
+
+-- Import successfully completed.  300024 rows of data created; limit viewable rows to 15.
+SELECT * FROM salaries LIMIT 15;
