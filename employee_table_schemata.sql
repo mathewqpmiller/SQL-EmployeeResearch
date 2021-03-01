@@ -5,8 +5,9 @@ DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS departments;
 DROP TABLE IF EXISTS dept_emp;
 DROP TABLE IF EXISTS dept_manager;
-DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS titles;
+DROP TABLE IF EXISTS salaries;
+
 
 -- Because of primary keys and foreign keys I recommend that the tables be built in this order; 
 
@@ -37,8 +38,8 @@ SELECT * FROM departments;
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR NOT NULL,
-	FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
+	FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
 	PRIMARY KEY (emp_no, dept_no)
 );
 
@@ -57,6 +58,15 @@ CREATE TABLE dept_manager (
 -- Import successfully completed.  24 rows of data added. No need to limit view of rows. 
 SELECT * FROM dept_manager;
 
+-- Create 'titles' table and execute
+CREATE TABLE titles (
+	title_id VARCHAR NOT NULL,
+	title VARCHAR NOT NULL
+);
+
+-- Import successfully completed. 7 rows of data created; no need to limit the row view.
+SELECT * FROM titles;
+
 -- Create 'salaries' table and execute
 CREATE TABLE salaries (
 	emp_no INT NOT NULL,
@@ -67,3 +77,5 @@ CREATE TABLE salaries (
 
 -- Import successfully completed.  300024 rows of data created; limit viewable rows to 15.
 SELECT * FROM salaries LIMIT 15;
+
+-- ALL .CSV FILES TABLE SCHEMATAS CREATED --
