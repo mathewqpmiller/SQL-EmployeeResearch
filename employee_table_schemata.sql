@@ -23,3 +23,12 @@ CREATE TABLE employees (
 -- Import successfully completed. Import returned 300024 rows of data; limit view to 15.
 -- I had to delete one column from the employees.csv for import to successfully complete.
 SELECT * FROM employees LIMIT 15;
+
+-- Create 'departments' table and execute
+CREATE TABLE departments (
+	dept_no VARCHAR (20) NOT NULL PRIMARY KEY,
+	dept_name VARCHAR (20) NOT NULL
+);
+
+-- Import successfully completed. Import returned 9 rows of data; no need to limit view
+SELECT * FROM departments;
