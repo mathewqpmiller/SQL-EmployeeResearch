@@ -1,6 +1,6 @@
 -- My Table Schemata for the SQL Homework - Employee Database: A Mystery in Two Parts
 
--- Drop any tables if they exist
+-- Use these to drop any tables if they exist
 DROP TABLE IF EXISTS departments;
 DROP TABLE IF EXISTS dept_emp;
 DROP TABLE IF EXISTS dept_manager;
@@ -32,3 +32,16 @@ CREATE TABLE departments (
 
 -- Import successfully completed. Import returned 9 rows of data; no need to limit view
 SELECT * FROM departments;
+
+-- Create 'dept_emp' table and execute
+CREATE TABLE dept_emp (
+	emp_no INT NOT NULL,
+	dept_no VARCHAR NOT NULL,
+	FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
+	PRIMARY KEY (emp_no, dept_no)
+);
+
+-- Import successfully completed. 331603 rows of data added; limit view to 15 rows.
+SELECT * FROM dept_emp LIMIT 15;
+
