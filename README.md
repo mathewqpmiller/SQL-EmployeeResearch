@@ -4,6 +4,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 Homework directory "EmployeeSQL" has been created.  Made changes to README.md file for git push.
 
 ## DATA MODEL
+![image](https://user-images.githubusercontent.com/74878952/109578887-d87d8380-7aac-11eb-89a6-c4633e7716b1.png)
 
 ## DATA ENGINEERING
 
