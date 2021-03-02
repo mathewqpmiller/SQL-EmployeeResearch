@@ -24,11 +24,7 @@ Once I understood the csv files I then began to build my tables.  In order to do
 
 In this portion of the project there was some analysis needed from the table schematas previously created.   My job was to answer eight questions related to the data provided.  Here is an example of one of the questions that was asked and the answer.
 
-Question 5)  List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+Question: List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 
-QUERY
-![image](https://user-images.githubusercontent.com/74878952/109582349-d7e7eb80-7ab2-11eb-9179-16733306241e.png)
-
-ANSWER
 ![image](https://user-images.githubusercontent.com/74878952/109579614-14fdaf00-7aae-11eb-9032-965c9c1b2c7f.png)
 
