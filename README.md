@@ -3,7 +3,9 @@
 In this project, I had to review several csv files and understand how they were related to one another.  I then designed table schematas to hold the information from within those csv's.  After that I imported the csv files into SQL databases where I then answered questions about the data through specific queries. In this activity I performed:
 
 *Data Modeling
+
 *Data Engineering
+
 *Data Analysis
 
 ## DATA MODELING
