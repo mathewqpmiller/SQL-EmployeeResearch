@@ -1,5 +1,8 @@
 # SQL: An Employee Mystery in Two Parts
 
+[ARCHIVED]
+This repository is no longer maintained and is preserved for reference only. No further updates, issues, or pull requests will be accepted.
+
 ## SQL Database
 
 In this project, I had to review several csv files and understand how they were related to one another.  I then designed table schematas to hold the information from within those csv's.  After that I imported the csv files into SQL databases where I then answered questions about them through specific queries. In this activity I performed:
