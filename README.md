@@ -1,8 +1,6 @@
 # SQL: An Employee Mystery in Two Parts
 
-[ARCHIVED]
-
-This repository is no longer maintained and is preserved for reference only. No further updates, issues, or pull requests will be accepted.
+**[ARCHIVED]**  This repository is no longer maintained and is preserved for reference only. No further updates, issues, or pull requests will be accepted.
 
 ## SQL Database
 
